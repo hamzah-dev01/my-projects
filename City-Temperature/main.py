@@ -13,5 +13,5 @@ if r.status_code == 200:
     print(f"Current temperature in {city}: {wdic['current']['temp_c']}°C")
 else:
     print(f"Error fetching weather data. Status code: {r.status_code}")
-    print(r.text)  # This will show the error message from the API
+    print(r.text)  # if error occurs through Api
     
