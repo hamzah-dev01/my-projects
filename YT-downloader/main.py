@@ -7,7 +7,8 @@ def download_video(url, output_path='.'):
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download([url])
 
-# Example usage
+
 video_url = input("Enter video URL: ")
 download_video(video_url)
+
 
